@@ -48,7 +48,7 @@ app.listen(3000, () => {
 At the ```app.listen(3000, () => {console.log("El servidor está inicializado en el puerto 3000");``` 
 we can change the port number at which we want the app to "listen"
 
-You can test your app:
+We can test our app running it at the console:
 
 ```
 node app.js
@@ -56,5 +56,9 @@ node app.js
 Open a web browser and type:
 
 ```
-localhost:<yourport>
+localhost:3000
 ```
+We should be seeing the "[]Saludos desde express" message.
+
+Moving on to next step, we follow along the 42 api guide at: 
+https://api.intra.42.fr/apidoc/guides/getting_started

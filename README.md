@@ -5,7 +5,7 @@ We are going to use nodjs and express.
 
 First step is install nodejs at the iMac machines at school:
 ```
-	brew install nodejs
+brew install nodejs
 ```
 
 While it's installing, we go ahead and create a github repository. Then we'll create a project with nodejs:
@@ -21,3 +21,40 @@ Then, install express framework:
 npm install express --save
 ```
 
+While all of this is installing, we are going to register the app at the 42 intra.
+
+```
+Being logged in at the 42 intra > user menu > settings > left panel API > 
+> Top right button "Register new App" > Fill the fields and give basic scope
+(At the URI field I'm filling with the localhost port I'll use to do tests)
+```
+
+Next, we are going to create ```(touch)``` an app.js file with your favourite IDE 
+and write a simple connection app:
+```
+const express = require("express");
+const app = express();
+app.post('/', function (req, res) {
+  res.send('[]Saludos desde express');
+});
+app.get('/', function (req, res) {
+  res.send('[]Saludos desde express');
+});
+app.listen(3000, () => {
+ console.log("El servidor está inicializado en el puerto 3000");
+});
+```
+
+At the ```app.listen(3000, () => {console.log("El servidor está inicializado en el puerto 3000");``` 
+we can change the port number at which we want the app to "listen"
+
+You can test your app:
+
+```
+node app.js
+```
+Open a web browser and type:
+
+```
+localhost:<yourport>
+```

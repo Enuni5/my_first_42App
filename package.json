@@ -1,0 +1,22 @@
+{
+  "name": "my_first_42app",
+  "version": "1.0.0",
+  "description": "My first application with the 42 school API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enuni5/my_first_42App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enuni5/my_first_42App/issues"
+  },
+  "homepage": "https://github.com/Enuni5/my_first_42App#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

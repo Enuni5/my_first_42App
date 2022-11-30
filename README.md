@@ -1,4 +1,4 @@
-# MY first 42App
+# My first 42App
 My first application with the 42 school API
 
 We are going to use nodjs and express.
@@ -35,17 +35,17 @@ and write a simple connection app:
 const express = require("express");
 const app = express();
 app.post('/', function (req, res) {
-  res.send('[]Saludos desde express');
+  res.send('[]Cheers from express');
 });
 app.get('/', function (req, res) {
-  res.send('[]Saludos desde express');
+  res.send('[]Cheers from express');
 });
 app.listen(3000, () => {
- console.log("El servidor está inicializado en el puerto 3000");
+ console.log("Server is initialized at port 3000");
 });
 ```
 
-At the ```app.listen(3000, () => {console.log("El servidor está inicializado en el puerto 3000");``` 
+At the ```app.listen(3000, () => {console.log("Server is initialized at port 3000");``` 
 we can change the port number at which we want the app to "listen"
 
 We can test our app running it at the console:
@@ -58,7 +58,7 @@ Open a web browser and type:
 ```
 localhost:3000
 ```
-We should be seeing the "[]Saludos desde express" message.
+We should be seeing the "[]Cheers from express" message.
 
 Moving on to next step, we follow along the 42 api guide at: 
 https://api.intra.42.fr/apidoc/guides/getting_started

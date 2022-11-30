@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 app.post('/', function (req, res) {
-  res.send('[]Saludos desde express');
+  res.send('[]Cheers from express');
 });
 app.get('/', function (req, res) {
-  res.send('[]Saludos desde express');
+  res.send('[]Cheers from express');
 });
 app.listen(2142, () => {
- console.log("El servidor está inicializado en el puerto 2142");
-});
+ console.log("Server is initialized at port 2142");
+}); 
